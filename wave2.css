@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.container{
+    height: 550px;
+    width: 350px;
+    background-image: linear-gradient(#dedb29,#3f07af);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+}
+.logo{
+    position: absolute;
+    left: 50%;
+    top: -40px;
+    transform: translateX(-50%);
+    width: 90px;
+    height: 90px;
+    padding: 7px 7px 7px 7px;
+    border-radius: 20%;
+    background-color: #fff;
+    box-shadow: 0 0 50px rgba(0,0,0,0.2);
+    text-align: center;
+    line-height: 60px;
+}
+
+.kp{
+    width: 90px;
+    height: 90px;
+    border-radius: 15%;
+    left: 50%;
+}
+.top-box{
+    height: 150px;
+    background-color: #dedb29;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+}
+
+.back{
+    background-color:  #e35454;
+    width: 40px;
+    height: 40px;
+    border-bottom-right-radius: 100%;
+    box-shadow: 5px 5px 15px rgb(32, 30, 30);
+}
+
+.middle-box{
+    height: 200px;
+}
+
+input[type="file"]{
+    display: none;
+}
+
+label{
+    position: absolute;
+    height: 20px;
+    width: 200px;
+    display: flex;
+    color: #fff;
+    background: #e12020;
+    text-align: center;
+    padding: 15px 15px;
+    margin: auto;
+    top: -230px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-size: 18px;
+    font-family: monospace,sans-serif;
+    letter-spacing: 1.5px;
+    user-select: none;
+    cursor: pointer;
+    box-shadow: 5px 15px 25px rgb(32, 30, 30);
+    border-radius: 5px;
+}
+
+.phno{
+    background-color: #fff;
+    color: #555;
+    margin: 100px 30px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 5px;
+}
+
+::placeholder{
+    text-align: center;
+}
+
+.field{
+    text-align: center;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.top-up{
+    color: #fff;
+    background-color: #e12020;
+    margin-left:  90px;
+    width: 150px;
+    height: 30px;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 420px){
+    .card-grp{
+        flex-direction: column;
+    }
+    .card-item{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .btr{
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,222 @@
+body{
+    background-color: #E3E7E8;
+    font-family: system-ui;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    background-color: rgba(245,242,235,255);
+}
+.container-box{
+    width: 100%;
+    position: relative;
+    padding: 0;
+}
+.container{
+    margin:auto;
+    transition: 0.5s;
+}
+header{
+    display: grid;
+    grid-template-columns: 1fr 50px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid ;
+ 
+}
+header .shopping{
+    position: relative;
+    text-align: right;
+}
+header .shopping img{
+    margin-top: 15px;
+    margin-right:20px ;
+    width: 35px;
+}
+header .shopping span{
+    font-family: 'Bricolage Grotesque', sans-serif;
+    background-color:red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    top: 5px;
+    left: 43%;
+    padding: 3px 10px;
+}
+.list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+    margin-top: 50px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+.list .item {
+    border-radius: 20px;
+    text-align: center;
+    background-color: #DCE0E1;
+    padding: 20px;
+    box-shadow: 0 50px 50px #757676;
+    letter-spacing: 1px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+.list .item img {
+    width: 90%;
+    height: 130px;
+    object-fit: cover;
+}
+.title{
+    font-weight: 600;
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+.price{
+    margin: 10px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+.list .item button {
+    background-color: rgba(237,147,72,255);
+    color:rgba(29,37,40,255);
+    width: 100%;
+    font-weight: bold;
+    padding: 10px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    border-radius:25px ;
+}
+.card{
+    border-left:2px solid rgba(29,37,40,255);
+    position: fixed;
+    top:0;
+    left: 100%;
+    width: 350px;
+    overflow: auto;
+    background-color: rgba(245,242,235,255);
+    height: 100%;
+    transition: 0.5s;
+}
+.active .card{
+    left: calc(100% - 350px);
+}
+.active .container{
+   transform: translateX(-200px);
+}
+.card h2{ 
+    color: rgba(237,147,72,255);
+    overflow: auto;
+    font-weight: 500;
+    margin: 0;
+    padding: 0px 10px;
+    margin-bottom: -10px;
+    height: 80px;
+    display: flex;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    align-items: center;
+}
+.card .checkOut{
+    overflow: auto;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+hr{
+    width:89%;
+    height:1px;
+    background-color: rgba(29,37,40,255);
+    margin-bottom: 30px;
+}
+.card .checkOut div{
+    background-color: rgba(237,147,72,255);
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+.card .checkOut div:nth-child(2){
+    transition: 0.3s;
+    width: 100%;
+    background-color: #1C1F25;
+    color: #fff;
+}
+.listCard li{
+    margin-left: -30px;
+    display: grid;
+    grid-template-columns: 100px repeat(3, 1fr);
+    color:rgba(29,37,40,255);
+   column-gap: 0px;
+}
+.listCard li div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-left: -25px;
+}
+.listCard li img{
+    margin-left: -20px;
+    border-radius: 10px;
+    margin-right: -20px;
+    width: 60%;
+    height: 90%;
+    background-color: #DCE0E1;
+}
+.listCard li button{
+    background-color: #fff5;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    border: 1px solid rgba(29,37,40,255) ;
+}
+.listCard .count{  
+    margin: 0 15px;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+.right{
+    margin-left: 400px;
+}
+.footer{
+    padding-top: 20px;
+    width:100%;
+}
+#header{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 18px;
+    color:white;
+}
+#info{
+    font-size: 14px;
+    color: white;
+}
+.head{
+    font-size: 15px;
+    color:rgba(237,147,72,255);
+    margin-bottom: -10px;
+}
+.left{
+    position: absolute;
+    left:0;
+    text-align: center;
+    width: 50%;
+    height: 50%;
+    background-color: black;
+}
+.right{
+    padding-left: 10px;
+    position: absolute;
+    width: 50%;
+    right: -2%;
+    height: 50%;
+    background-color: rgba(29,37,40,255);
+}
+.he{
+    margin-bottom: -10px;
+}
+p{
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+.hide{
+    display: none;
+}

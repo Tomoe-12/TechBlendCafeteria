@@ -1,0 +1,99 @@
+.container1{
+    position: relative;
+    border-radius: 20px;
+    width: 290px;
+    height: 510px;
+    background-color: rgba(245,242,235,255);
+    margin-top: 22%;
+}
+.top-box{
+    z-index: 1;
+    position: absolute;
+    left:11%;
+    top:40%;
+    height: 40%;
+}
+.back{
+    background-color:  #e35454;
+    width: 40px;
+    height: 40px;
+    border-bottom-right-radius: 100%;
+    box-shadow: 5px 5px 15px rgb(25, 100, 200);
+}
+input[type="file"]{
+    display: none;
+}
+.middle-box1{
+    border: 1px solid red;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    top: 50%;
+    left: 0;
+    height: 200px;
+}
+label{
+    position: absolute;
+    height: 20px;
+    width: 200px;
+    display: flex;
+    color: #fff;
+    background: #e12020;
+    text-align: center;
+    padding: 15px 15px;
+    top:-15%;
+    left: 0;
+    font-size: 18px;
+    font-family: monospace,sans-serif;
+    letter-spacing: 1.5px;
+    user-select: none;
+    cursor: pointer;
+    box-shadow: 5px 10px 25px rgb(73, 85, 85);
+    border-radius: 5px;
+}
+.phno{
+    border: 1px solid rgb(169, 164, 164);
+    background-color: #fff;
+    color: #555;
+    margin: 10px 10px;
+    padding: 0px 10px 10px 10px;
+    border-radius: 5px;
+}
+::placeholder{
+    text-align: center;
+}
+.field{
+    text-align: center;
+    font-size: 20px;
+    line-height: 20px;
+    width: 100%;
+}
+.top-up1{  
+    position: absolute;
+    top:80%;
+    left:20%;
+    color: #fff;
+    background-color: rgba(11,95,183,255);
+    width: 170px;
+    height: 37px;
+    border-radius: 20px;
+}
+.wave-button{
+    font-family: 'Bricolage Grotesque', sans-serif;
+    width: 160px;
+    height: 35px;
+    border-radius: 10px;
+    background-color:rgba(255,229,18,255);;
+}
+@media screen and (max-width: 420px){
+    .card-grp{
+        flex-direction: column;
+    }
+    .card-item{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .btr{
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechBlencd Cafeteria</title>
+    <link rel="stylesheet" href="loginandregister.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@10..48&display=swap" rel="stylesheet">
+<link rel="icon" type="x-icon" href="logo.png" class="logo-icon" style="width: 20%;">
+</head>
+<body>
+   <div class="header">
+    <h1>Techblend Cafeteria</h1>
+   </div>
+   <div class="logo">
+    <img class="kp" src="logo.png" alt="">
+</div>
+    <div class="container-box">
+     
+        <div class="form-btn">
+          <span onclick="login()">Login</span>
+          <span onclick="register()">Register</span>
+          <hr id="indicator">
+        </div>
+        <form id="loginform">
+          <input type="text" placeholder="Username">
+          <input type="password" placeholder="password" >
+          <button type="submit" class="btn"><a href="welcome.html">Login</a></button>
+          <a href="">forget password</a>
+        </form>
+        <form id="registerform">
+          <input type="text" placeholder="Username">
+          <input type="email" placeholder="Email">
+          <input type="password" placeholder="Password">
+          <input type="password" placeholder="Retype password">
+          <button type="submit" class="btn" ><a href="welcome.html">Register</a></button>
+        </form>
+      </div>
+  <script>
+    var LoginForm =document.getElementById("loginform");
+    var  RegForm=document.getElementById("registerform");
+    var indicator =document.getElementById("indicator");
+
+    function register(){
+      
+      RegForm.style.transform="translateX(0px)";
+      LoginForm.style.transform= "translateX(0px)";
+      indicator.style.transform="translateX(60px)";
+    }
+    function login(){
+      
+      RegForm.style.transform="translateX(300px)";
+      LoginForm.style.transform= "translateX(360px)";
+      indicator.style.transform="translateX(-60px)";
+    }
+
+  </script>
+   
+</body>
+</html>

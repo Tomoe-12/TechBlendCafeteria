@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TechBlend Cafeteria</title>
+	<link rel="icon" type="x-icon" href="logo.png" class="logo-icon" style="width: 20%;">
+	<link rel="stylesheet" href="credit.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+</head>
+<body>
+
+	<div class="cover"></div>
+<div class="wapper">
+	<div class="payment">
+		<div class="payment-logo">
+				<p>p</p>
+		</div>
+	</div>
+	<div class="form">
+	<div class="card space icon-relative">
+		<label class="label">Card holder:</label>
+		<input type="text" class="input" name="card_holder" placeholder="Coding Market">
+		<i class="fas fa-user"></i>
+	</div>
+	
+<div class="card space icon-relative">
+	<label class="label">Card number:</label>
+	<input type="text" class="input" name="card_number" placeholder="Card Number" data-mask="0000 0000 0000 0000">
+	<i class="far fa-credit-card"></i>
+</div>
+<div class="card-grp space">
+	<div class="card-item icon-relative">
+		<label class="label">Expiry date:</label>
+		<input type="text" class="input" name="expiry_date" placeholder="00 / 00" data-mask="00 / 00">
+		<i class="far fa-calendar-alt"></i>
+	</div>
+	<div class="card-item icon-relative">
+		<label class="label">CVC:</label>
+		<input type="text" class="input" name="cvc" placeholder="000" data-mask="000">
+		<i class="fas fa-lock"></i>
+	</div>
+</div>
+
+	<div class="btn" onclick="location.href='thank.html'">
+		pay
+	</div>
+
+</div>
+	
+</div>
+
+	<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+</body>
+</html>

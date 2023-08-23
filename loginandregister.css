@@ -1,0 +1,145 @@
+body{
+    width:300px;
+    box-sizing: border-box;
+    padding-right: 0;
+    padding-left:0 ;
+    background-image: rgba(29,37,40,255);
+    background-image: url(backforlogin.jpg);
+    height: 850px;
+    background-size: cover;
+    background-repeat: repeat-y;
+    font-family: 'Bricolage Grotesque', sans-serif;
+  }
+  .header{
+      width: 100%;
+      padding-left: 16%;
+      margin-bottom: -30%;
+      margin-top: 17%;
+  }
+  .header > h1{
+    color:rgba(29,37,40,255);
+    font-size: 29px;
+    font-weight: 900;
+  }
+  .container-box{
+      border-radius: 20px;
+      text-align: center;
+      padding:20px 0px;
+      position: relative;
+      background-color:rgba(245,242,235,255); ;
+      width:280px;
+      left:14%;
+      height: 380px;
+      box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+      overflow: hidden;
+      margin-top: 22%; 
+  }
+  .container-box span{
+     font-size: 18px;
+     margin-top: 15px;
+      font-weight: bold;
+      padding:0 10px;
+      color:black;
+      cursor: pointer;
+      width:100px;
+      display: inline-block;
+  }
+  .form-btn{
+      display: inline-block;
+      opacity: 1;
+  }
+  .container-box form{
+      max-width: 300px;
+      padding:0 20px;
+      position:absolute;
+      top:100px;
+      transition: 0.5s;
+  }
+  form input{
+      width:80%;
+      height: 35px;
+      margin:10px 0;
+      padding:0 10px;
+      border: 1px solid black;
+      transition: .4s;
+      font-family: 'Bricolage Grotesque', sans-serif;
+  }
+  form input:hover{
+      border:1.5px solid red;
+  }
+  form input:focus{
+      border:2px solid blue;
+  }
+  form .btn{
+      background-color: rgba(237,147,72,255);
+      width:90%;
+      border:1px solid rgba(29,37,40,255);
+      margin:10px 0;
+      cursor:pointer;
+      height: 30px;
+      transition: 1s;
+      border-radius: 20px;
+      font-family: 'Bricolage Grotesque', sans-serif;
+  }
+  form .btn:hover{
+     border: 1px solid red;
+  }
+  form .btn:focus{
+      outline:none;
+  }
+  #loginform{
+      width:80%;
+      height: 35px;
+      left:-350px;
+  }
+  #registerform{
+      left:0;
+  }
+  form a{
+    text-decoration: none;
+    color:black;
+      font-size: 12px;
+  }
+  #indicator{
+      width:93px;
+      border:none;
+      background-color: rgba(237,147,72,255);
+      height: 3px;
+      margin-top: 8px;
+      transform: translateX(63px);
+      border-radius: 10px;
+      transition: .8s;
+  }
+  .logo{
+      position: relative;
+      left: 60%;
+      top:12%;
+      transform: translateX(-50%);
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      background-color: rgba(245,242,235,255);
+      box-shadow: 0 18px 50px rgba(0,0,0,0.2);
+      text-align: center;
+      line-height: 60px;
+      z-index: 1;
+  }
+  .kp{
+    position: absolute;
+      width: 70px;
+      border-radius: 15%;
+      left:20%;
+      top:9%;
+  }
+  .logo::before{
+    border-radius: 50%;
+    content: '';
+    position: absolute;
+    width:90%;
+    height: 90%;
+    background-color: rgba(237,147,72,255);
+    left:5%;
+    top: 5%;
+  }
+  
+  
